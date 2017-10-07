@@ -1,10 +1,9 @@
 body {
-	background: #66A0D0;
+	background: #fff;
 }
 
 #checkout {
 	opacity: 1;
-	border: 1px solid gray;
 	width: 40%;
 	min-width: 180px;
 	min-height: 400px;
@@ -12,7 +11,6 @@ body {
 	right: 20px;
 	background-color: #DDDDDD;
 	color: #555555;
-	border-radius: 4px;
 }
 
 @media (max-width: 680px) {
@@ -32,20 +30,15 @@ body {
 }
 
 #checkout .check_sec:last-of-type {
-	border-bottom: 1px solid grey;
 	padding-bottom: 20px;
 }
 
-hr {
-	margin: 20px auto 10px auto;
-	width: 80%;
-}
-
 #checkout .summary {
-	background-color: #CCCCCC;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
 	padding: 20px 10px;
 	font-size: 120%;
-	border-bottom: 1px solid grey;
 	margin-bottom: 0px;
 }
 
@@ -59,7 +52,6 @@ hr {
 .item {
 	background-color: #DDDDDD;
 	color: #555555;
-	border: 1px solid grey;
 	margin: 10px;
 	height: 200px;
 	min-width: 350px;
@@ -92,59 +84,72 @@ hr {
 }
 
 .quantity * {
-	display: inline-block;
-	margin: 0 5px;
+	border: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 7px;
+    margin: 5px 5px;
 }
 
 #delete {
 	position: absolute;
 	top: 3px;
 	right: 3px;
+	border: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 7px;
+    margin: 5px 5px;
 }
 
 #empty {
 	text-align: center;
 	font-family: sans-serif;
-	font-size: 30px;
+	font-size: 22px;
+	color: #fff;
 	padding: 40px 0px;
 }
 
 #back {
 	position: absolute;
 	top: 10px;
-	left: 20px;
-	color: #BBBBBB;
+	left: 10px;
+	color: #74767a;
 	font-family: helvetica;
-	text-decoration: none;
+	border-bottom: 1px;
 }
 
 #back:hover {
 	color: #CCCCCC;
 }
 
-#back span {
-	font-size: 22px;
-}
 
 h1 {
+	background-color: #000;
+	padding: 15px 0 15px 0;
 	text-align: center;
 	font-family: helvetica;
 	font-size: 15px;
-	color: #666666;
+	color: #fff;
 	margin-bottom: 10px;
 }
 
 #checkout form {
 	width: 200px;
 	height: 150px;
-	padding: 15px;
-	margin: auto;
+	display: inline-block;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 0;
+	margin-left: 45px;
+	margin-bottom: 0;
 
 }
 
 #checkout input {
 	width: 100%;
-	border: 1px solid #AAAAAA;
 	font-size: 100%;
 }
 
@@ -154,11 +159,14 @@ h1 {
 }
 
 #submit {
-	background-color: #999999;
-	opacity: 0.6;
+	background-color: #ff8b26;
+	color: #fff;
 	height: 30px;
 	margin-top: 5px;
 	margin-bottom: 10px;
+	border: 0;
+	box-shadow:none;
+	border-radius: 0px;
 }
 
 #submit:hover {
@@ -192,6 +200,7 @@ h1 {
 	text-align: center;
 	font-family: sans-serif;
 	margin-bottom: 10px;
+	text-decoration: none;
 	color: #666666;
 }
 

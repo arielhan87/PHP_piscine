@@ -35,13 +35,5 @@ function	display_category_list()
 	}
 }
 
-function	display_search_categories()
-{
-	$categories = get_categories(TRUE);
-	echo "<div id='search-category-container'>";
-	foreach($categories as $key=>$val)
-		echo "<a class='search-category' href='./index.php?category=$key'><div>".ucfirst($key)."</div></a>";
-	echo "</div>";
-}
 
 ?>

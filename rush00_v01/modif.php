@@ -45,10 +45,10 @@ if ($_POST['submit'] === "OK" && $login !== "" && $oldpw !== "" && $newpw !== ""
 <html>
 <head>
 	<title>Update Password</title>
-	<link rel="stylesheet" href="modif.css" />
+	<link rel="stylesheet" href="style/modif.css" />
 </head>
 <body>
-	<a id="back" href="index.php"><span>&#8619</span> Back to StoreName</a>
+	<a id="back" href="index.php">Back </a>
 	<h1>Update Password</h1>
 	<form action="./modif.php" method="post">
 		<input class="ifield" type="text" name="login" placeholder="Enter Username" />

@@ -19,10 +19,10 @@ if ($_POST['login'] !== "" && $_POST['passwd'] !== "")
 <html>
 	<head>
 		<title>Member Login</title>
-		<link rel="stylesheet" href="login.css" />
+		<link rel="stylesheet" href="style/login.css" />
 	</head>
 	<body>
-		<a id="back" href="index.php"><span>&#8619</span> Back to StoreName</a>
+		<a id="back" href="index.php"> Back </a>
 		<h1>Member Login</h1>
 		<form method='post' action=<?php echo "login.php?referer=".$_GET["referer"]?>>
 			<input class="ifield" type='text' name='login' placeholder="Enter Username"/>

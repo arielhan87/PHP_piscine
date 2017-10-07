@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #CCCCCC;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,53 +15,49 @@ body {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	color: #66A0D0;
+	color: #74767a;
 	font-family: helvetica;
-	text-decoration: none;
+	border-bottom: 1px;
 }
 
-#back span {
-	font-size: 22px;
-}
 
 h1 {
 	font-family: helvetica;
 	font-size: 20px;
-	color: #66A0D0;
+	color: #74767a;
 	margin-bottom: 10px;
 }
 
 form {
 	width: 200px;
 	height: 150px;
-	border: 3px solid #66A0D0;
-	padding: 15px;
+	background-color: #CCCCCC;
+	padding: 25px 15px;
 
 }
 
 input {
 	width: 100%;
-	border: 1px solid #66A0D0;
+	height: 10px;
 	font-size: 100%;
 }
 
 .ifield {
-	height: 40px;
-	text-align: center
+	height: 30px;
+	text-align: center;
 }
 
+
 #submit {
-	background-color: #66A0D0;
-	opacity: 0.6;
+	background-color: #ff8b26;
+	box-shadow: none;
+	border: none;
 	height: 30px;
+	padding-bottom: 30px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
-#submit:hover {
-	opacity: 0.8;
-	cursor: pointer;
-}
 
 #error-message {
 	font-size: 80%;

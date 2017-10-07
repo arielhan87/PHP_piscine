@@ -4,12 +4,13 @@
 }
 
 body {
-	background-color: #EEEEEE;
+	background-color: #fff;
 }
 
 #header {
-	background-color: steelblue;
-	height: 90px;
+	background-color: #000;
+	height: 70px;
+	padding-top: 10px;
 	border-bottom: 1px solid steelblue;
 	display: flex;
 	justify-content: flex-end;
@@ -17,43 +18,17 @@ body {
 	position: relative;
 }
 
-#search {
-	background-image: url("https://cdn1.iconfinder.com/data/icons/pointed-edge-web-navigation/117/search-grey-512.png");
-	background-size: 10%;
-	background-repeat: no-repeat;
-	background-position: right center;
-	padding-left: 2px;
-	font-size: 1.2em;
-	height: 40%;
-	width: 20%;
-	position: absolute;
-	top: 30%;
-	left: 2%;
-}
 
-#search-category-container {
-	position: absolute;
-	width: 20%;
-	top: 70%;
-	left: 2%;
-	z-index: 1000;
-}
-
-.search-category {
-	color: #555555;
-	font-family: sans-serif;
-	background-color: white;
-	text-decoration: none;
-	height: 20px;
-	display: none;
-	position: relative;
-	padding: 10px 0px;
-	border: 1px solid lightgray;
+#header #nav-container {
+	margin: 10px;
+	padding: 15px;
+	display: inline-block;
 }
 
 #header a.navbar {
-	padding: 30px 2vw;
-	font-size: 1.3em;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: #CCCCCC;
 	font-family: sans-serif;
@@ -64,19 +39,17 @@ body {
 }
 
 #header a.navbar:hover {
-	background-color: #BBBBBB;
-	color: #555555;
+	border-bottom: #000;
+	color: #ffc042;
 }
 
 #products {
 	vertical-align: top;
-	display: inline-block;
-	background-color: #CCCCCC;
-	border: 1px solid #BBBBBB;
-	border-radius: 3px;
+	display: inline-block; 
 	overflow: auto;
 	width: calc(100% - 204px);
-	margin: 10px;
+	margin-left: 100px;
+	margin-top: 30px;
 }
 
 #mod-icon, #del-icon {
@@ -102,9 +75,6 @@ body {
 	height: 500px;
 	margin-left: 10px;
 	margin-top: 10px;
-	background-color: steelblue;
-	border: 1px solid #BBBBBB;
-	border-radius: 3px;
 	text-align: center;
 }
 
@@ -156,7 +126,11 @@ input {
 }
 
 .quantity * {
+	border: 0;
+	box-shadow:none;
+	border-radius: 0px;
 	display: inline-block;
+	padding: 7px;
 	margin: 0 5px;
 }
 

@@ -7,11 +7,11 @@ if (auth($_POST["login"], $_POST["passwd"]))
 
 <html>
 <head>
-	<link rel="stylesheet" href="basket.css" />
+	<link rel="stylesheet" href="style/basket.css" />
 	<title>Checkout</title>
 </head>
 <body>
-	<a id="back" href="index.php"><span>&#8619</span> Back to StoreName</a>
+	<a id="back" href="index.php"> Back </a>
 	<div id="checkout">
 		<div class="summary check_sec">
 			Order Summary
@@ -33,7 +33,7 @@ if (auth($_POST["login"], $_POST["passwd"]))
 		</div>
 		<div class="check_sec">
 			Delivery Fee
-			<span>$5.99</span>
+			<span>$4.99</span>
 		</div>
 		<div class="check_sec">
 			Tax
@@ -44,12 +44,11 @@ if (auth($_POST["login"], $_POST["passwd"]))
 				?>
 			</span>
 		</div>
-		<hr />
 		<div class="check_sec">
 			Payment Due
 			<span>
 				<?php
-					echo money_format("$%i", $tax + $subtotal + 5.99);
+					echo money_format("$%i", $tax + $subtotal + 4.99);
 				?>
 			</span>
 		</div>

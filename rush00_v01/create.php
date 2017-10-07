@@ -60,10 +60,10 @@ if ($_POST['submit'] == "OK" && $login !== "" && $passwd !== "")
 <html>
 	<head>
 		<title>Create Account</title>
-		<link rel="stylesheet" href="create.css" />
+		<link rel="stylesheet" href="style/create.css" />
 	</head>
 	<body>
-		<a id="back" href="index.php"><span>&#8619</span> Back to StoreName</a>
+		<a id="back" href="index.php"> Back</a>
 		<h1>Create Account</h1>
 		<form action=<?php echo "create.php?referer=".$_GET["referer"]?> method='post'>
 			<input class="ifield" type='text' name='login' placeholder="Enter Username" />
