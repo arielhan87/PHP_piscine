@@ -10,8 +10,8 @@ $a = array(
 ],
 
 [
-	"name"=>"tshirt",
-	"categories"=>array("tshirt", "cloth"),
+	"name"=>"t-shirt",
+	"categories"=>array("t-shirt", "cloth"),
 	"price"=>"12.50",
 	"image"=>"https://sc01.alicdn.com/kf/UT803SPXshXXXcUQpbXU/Customized-Printed-T-Shirt.png"
 ],
@@ -20,7 +20,7 @@ $a = array(
 	"name"=>"lamp",
 	"categories"=>array("lamp", "electronics"),
 	"price"=>"33.00",
-	"image"=>"http://media.4rgos.it/i/Argos/4308980_R_Z001A_UC1434449?$Web$&w=570&h=513"
+	"image"=>"https://target.scene7.com/is/image/Target/50948021?wid=328&hei=328&qlt=80&fmt=pjpeg"
 ],
 
 
@@ -41,24 +41,24 @@ $a = array(
 
 
 [
-	"name"=>"glove",
-	"categories"=>array("glove", "cloth"),
+	"name"=>"gloves",
+	"categories"=>array("gloves", "cloth"),
 	"price"=>"21.25",
 	"image"=>"http://scene7.zumiez.com/is/image/zumiez/pdp_hero/Dakine-Omega-Carbon-Snowboard-Gloves-_264049-front.jpg"
 ],
 
 
 [
-	"name"=>"runningshoes", 
-	"categories"=>array("runningshoes", "shoes"),
+	"name"=>"running shoes", 
+	"categories"=>array("running shoes", "shoes"),
 	"price"=>"72.25",
 	"image"=>"https://i.pinimg.com/736x/d5/35/07/d53507e198b6a0961436fc7cc724d26c--womens-nike-shoes-running-shoes-nike.jpg"
 ],
 
 
 [
-	"name"=>"kidshoes",
-	"categories"=>array("kidshoes", "shoes"),
+	"name"=>"kid's shoes",
+	"categories"=>array("kid's shoes", "shoes"),
 	"price"=>"2.00",
 	"image"=>"http://media.jojomamanbebe.com/media/catalog/product/cache/1/image/1000x/cc44d3b39965d3efd15a8158cb2fdfb4/a/8/a8431nav_1_7.jpg"
 ],
