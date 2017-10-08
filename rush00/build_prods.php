@@ -14,7 +14,7 @@ $a = array(
 "t-shirt" =>
 [
 	"name"=>"t-shirt",
-	"categories"=>array("t-shirt", "cloth"),
+	"categories"=>array("t-shirt", "cloths"),
 	"price"=>"12.50",
 	"image"=>"https://sc01.alicdn.com/kf/UT803SPXshXXXcUQpbXU/Customized-Printed-T-Shirt.png"
 ],
@@ -30,7 +30,7 @@ $a = array(
 "jacket"=>
 [
 	"name"=>"jacket",
-	"categories"=>array("jacket", "cloth"),
+	"categories"=>array("jacket", "cloths"),
 	"price"=>"71",
 	"image"=>"https://www.revzilla.com/product_images/0234/9218/saint_unbreakable_jacket_detail.jpg"
 ],
@@ -38,7 +38,7 @@ $a = array(
 "jean"=>
 [
 	"name"=>"jean",
-	"categories"=>array("jean", "cloth"),
+	"categories"=>array("jean", "cloths"),
 	"price"=>"27",
 	"image"=>"http://lp.hm.com/hmprod?set=key[source],value[/model/2016/E00%200401254%20005%2086%201367.jpg]&set=key[rotate],value[]&set=key[width],value[]&set=key[height],value[]&set=key[x],value[]&set=key[y],value[]&set=key[type],value[STILL_LIFE_FRONT]&set=key[hmver],value[5]&set=key[quality],value[80]&set=key[size],value[346x405]&call=url[file:/mobile/v2/product]"
 ],
@@ -46,7 +46,7 @@ $a = array(
 "gloves"=>
 [
 	"name"=>"gloves",
-	"categories"=>array("gloves", "cloth"),
+	"categories"=>array("gloves", "cloths"),
 	"price"=>"21.25",
 	"image"=>"http://scene7.zumiez.com/is/image/zumiez/pdp_hero/Dakine-Omega-Carbon-Snowboard-Gloves-_264049-front.jpg"
 ],
