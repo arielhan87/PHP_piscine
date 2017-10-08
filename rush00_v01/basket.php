@@ -81,7 +81,7 @@ if (auth($_POST["login"], $_POST["passwd"]))
 		  if (!isset($_SESSION["basket"]) || count($_SESSION["basket"]) == 0)
 		  {
 				echo '<div class="item">';
-						echo "<p id='empty'>Your Basket is Empty</p>";
+						echo "<p id='empty'>Empty</p>";
 				echo '</div>';
 		  }
 		  else
