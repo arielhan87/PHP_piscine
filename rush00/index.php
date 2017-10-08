@@ -12,8 +12,18 @@
 </head>
 <body>
 	<div id="header">
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="#"> All </a></button>
+	  <div class="dropdown-content">
+	    <a href="#">cloths</a>
+	    <a href="#">electronics</a>
+	    <a href="#">shoes</a>
+	  </div>
+	</div>
 		<div id="header-container">
+
 			<div id="nav-container">
+
 		        <?php
 		        
 		            if ($_SESSION["loggued_on_user"] == "")
