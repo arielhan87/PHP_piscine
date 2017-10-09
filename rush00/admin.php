@@ -80,10 +80,10 @@ if ($_POST['adm_login'] != "")
 <html>
 	<head>
 		<title>Admin</title>
-		<link rel="stylesheet" href="admin.css" />
+		<link rel="stylesheet" href="style/admin.css" />
 	</head>
 	<body>
-		<a id="back" href="index.php"><span>&#8619</span> Back to StoreName</a>
+		<a id="back" href="index.php"> Back </a>
 		<form method='post' action="admin.php">
 			<h1>Delete Account</h1>
 			<input class="ifield" type='text' name='del_login' placeholder="Enter Username"/>

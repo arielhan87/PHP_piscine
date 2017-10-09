@@ -25,7 +25,7 @@
 			<div id="nav-container">
 
 		        <?php
-		        
+		        	$_SESSION["admin"] = "admin";
 		            if ($_SESSION["loggued_on_user"] == "")
 		            {
 		                echo '<a class=\'navbar\' href="login.php?referer=index.php">Login</a>';
@@ -34,7 +34,7 @@
 		            else 
 		            {
 		            	if ($_SESSION["admin"] != "")
-		            		echo '<a class=\'navbar\' href="admin.php">Admin</a>';
+		            	echo '<a class=\'navbar\' href="admin.php">Admin</a>';
 		                echo '<a class=\'navbar\' href="logout.php">Logout</a>';
 		            }
 		        ?>

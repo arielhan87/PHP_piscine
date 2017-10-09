@@ -15,25 +15,41 @@ img {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	color: black;
+	color: #74767a;
 	font-family: helvetica;
-	text-decoration: none;
+	border-bottom: 1px;
 }
 
-#back span {
-	font-size: 22px;
+#back:hover {
+	color: #CCCCCC;
+}
+
+.submit {
+	 border: 0;
+	 box-shadow:none;
+	 border-radius: 0px;
+}
+
+input {
+	font-family: helvetica;
 }
 
 h1 {
 	margin-top: 5%;
 	text-align: center;
+	font-family: helvetica;
 }
 
+h1.update {
+	font-family: helvetica;
+}
 form {
 	text-align: center;
-	border: 1px solid steelblue;
+	border: 1px solid #CCCCCC;
 	width: 60%;
 	margin: 5% auto;
+	font-family: helvetica;
+	font-size: 12px;
 }
 
 form input {

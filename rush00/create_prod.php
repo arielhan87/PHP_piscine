@@ -35,17 +35,17 @@ else
 	echo "<html>
 		<head>
 		<title>Create Item</title>
-			<link rel='stylesheet' href='./mod_prod.css' />
+			<link rel='stylesheet' href='style/mod_prod.css' />
 		</head>
 		<body>
-			<a id='back' href='index.php'><span>&#8619</span> Back to StoreName</a>
+			<a id='back' href='index.php'> Back </a>
 			<h1>Create Item</h1>
 			<form action='./create_prod.php' method='post'>
 				Name: <input name='name' type='text' /><br />
 				Price: <input name='price' type='text' placeholder='0.00' /><br />
-				Categories: <input name='categories' type='text' placeholder='Eg. vegetables,root,...'/><br />
+				Categories: <input name='categories' type='text' placeholder='shoes, cloths, etc'/><br />
 				Image URL: <input name='image' type='text' value=''/><br />
-				<input type='submit' value='Save Changes' />
+				<input type='submit' class='submit' value='Save Changes' />
 			</form>
 		</body>
 		</html>";

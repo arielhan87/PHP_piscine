@@ -20,6 +20,9 @@ body {
 	border-bottom: 1px;
 }
 
+#back:hover {
+	color: #CCCCCC;
+}
 
 h1 {
 	font-family: helvetica;

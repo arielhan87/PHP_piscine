@@ -6,18 +6,18 @@ function display_mod_form($product)
 	echo "<html>
 		<head>
 		<title>Modify ".ucfirst(urldecode($product['name']))."</title>
-			<link rel='stylesheet' href='./mod_prod.css' />
+			<link rel='stylesheet' href='style/mod_prod.css' />
 		</head>
 		<body>
-			<a id='back' href='index.php'><span>&#8619</span> Back to StoreName</a>
-			<h1>Update ".ucfirst(urldecode($product['name']))."</h1>
+			<a id='back' href='index.php'> Back </a>
+			<h1 class='update'>Update ".ucfirst(urldecode($product['name']))."</h1>
 			<img src='".$product['image']."' />
 			<form action='./mod_prod.php' method='post'>
-				Name: <input name='name' type='text' value='".$product['name']."' /><br />
-				Price: <input name='price' type='text' value='".$product['price']."' /><br />
-				Categories: <input name='categories' type='text' value='".implode(",",array_slice($product['categories'], 1))."'/><br />
-				Image URL: <input name='image' type='text' value='".$product['image']."'/><br />
-				<input type='submit' name='".urlencode($product['name'])."' value='Save Changes' />
+				Name <input name='name' type='text' value='".$product['name']."' /><br />
+				Price <input name='price' type='text' value='".$product['price']."' /><br />
+				Categories <input name='categories' type='text' value='".implode(",",array_slice($product['categories'], 1))."'/><br />
+				Image URL <input name='image' type='text' value='".$product['image']."'/><br />
+				<input type='submit' class='submit' name='".urlencode($product['name'])."' value='Save Changes' />
 			</form>
 		</body>
 		</html>";

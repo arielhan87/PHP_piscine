@@ -20,7 +20,9 @@ body {
 
 }
 
-
+#back:hover {
+	color: #CCCCCC;
+}
 
 h1 {
 	font-family: helvetica;
@@ -53,7 +55,6 @@ input {
 	box-shadow: none;
 	border: none;
 	height: 30px;
-	padding-bottom: 30px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
