@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="calc">
+		<input type="text" id="left" value ="" />
+		<select id="opp">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="right" value ="" />
+	</div>
+	<input type="submit" id="submit" value="Try me!" />
+</body>
+</html>
+<script>
+$(document).ready(function() {
+	setInterval(function() {
+		alert("Please, use me...");
+	}, 30000);
+	function positive_num(str) {
+		var n = Math.floor(Number(str));
+		return (String(n) === str && n >= 0);
+	}
+	$("#submit").on("click", function() {
+		var left_num = $("#left").val();
+		var right_num = $("#right").val();
+		var opp = $("#opp").val();
+		if (!positive_num(left_num) || !positive_num(right_num))
+		{
+			console.log("Error!!");
+			alert("Error!!");
+		}
+		else if ((opp === "%" || opp ==="/") && parseInt(right_num) === 0)
+		{
+				console.log("It's over 9000!");
+				alert("It's over 9000!");
+		}
+		else
+		{
+			var l = parseInt(left_num);
+			var r = parseInt(right_num);
+			var result;
+			switch(opp)
+			{
+				case "+":
+					result = l + r;
+					break;
+				case "-":
+					result = l - r;
+					break;
+				case "*":
+					result = l * r;
+					break;
+				case "/":
+					result = l / r;
+					break;
+				case "%":
+					result = l % r;
+					break;
+			}
+			console.log(result);
+			alert(result);
+		}
+	})
+});
+</script>
