@@ -1,47 +1,58 @@
-<DOCTYPE! html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<title>Balloon</title>
 	<style>
-		#balloon {
+		.balloon{
+			width: 200px;
+			height: 200px;
+			background-color: red;
 			border-radius: 100%;
 		}
 	</style>
 </head>
 <body>
-	<div id="balloon"></div>
+	<div class="balloon" id="balloon">
+	</div>
+	<script type="text/javascript">
+
+	     var circle = document.getElementById("balloon");
+	     circle.addEventListener("click", inflate, false);
+	     circle.addEventListener("mouseout", deflate, false);
+	     var i = 0;
+
+     function inflate() {
+	     	var elem = document.getElementById("balloon");
+	     	var add = elem.style.width;
+	     	elem.style.width = elem.offsetWidth+10+'px';
+		    elem.style.height = elem.offsetHeight+10+'px';
+		    if (elem.style.backgroundColor == '' || elem.style.backgroundColor == 'red')
+		   		elem.style.backgroundColor = 'green';
+		   	else if (elem.style.backgroundColor == 'green')
+		   		elem.style.backgroundColor = 'blue';
+		   	else if (elem.style.backgroundColor == 'blue')
+					elem.style.backgroundColor = 'red';
+
+		    if (elem.style.width > '420px'){
+		    	elem.style.height = '200px'
+		    	elem.style.width = '200px'
+		    }
+			}
+
+	     function deflate() {
+	     	var elem = document.getElementById("balloon");
+	     	if (elem.style.width > '200px') {
+	     		elem.style.width = elem.offsetWidth-5+'px';
+	     		elem.style.height = elem.offsetHeight-5+'px';
+	     	}
+		    	if (elem.style.backgroundColor == '' || elem.style.backgroundColor == 'red')
+						elem.style.backgroundColor = 'blue';
+		    	else if (elem.style.backgroundColor == 'blue')
+						elem.style.backgroundColor = 'green';
+		    	else if (elem.style.backgroundColor == 'green')
+						elem.style.backgroundColor = 'red';
+	     }
+
+	</script>
 </body>
 </html>
-<script>
-	var balloon = document.getElementById("balloon");
-	balloon.style.width = 200;
-	balloon.style.height = 200;
-	balloon.style.backgroundColor = "red";
-	balloon.addEventListener("click", function() {
-		this.style.height = (parseInt(this.style.height) + 10);
-		this.style.width = (parseInt(this.style.width) + 10);
-		if (parseInt(balloon.style.width) > 420)
-		{
-			balloon.style.height = 200;
-			balloon.style.width = 200;
-		}
-		if (balloon.style.backgroundColor == "red")
-			balloon.style.backgroundColor = "green";
-		else if (balloon.style.backgroundColor == "green")
-			balloon.style.backgroundColor = "blue";
-		else if (balloon.style.backgroundColor == "blue")
-			balloon.style.backgroundColor = "red";
-	});
-	balloon.addEventListener("mouseleave", function() {
-		if (parseInt(balloon.style.width) > 200)
-		{
-			this.style.height = (parseInt(this.style.height) - 5);
-			this.style.width = (parseInt(this.style.width) - 5);
-		}
-		if (balloon.style.backgroundColor == "red")
-			balloon.style.backgroundColor = "blue";
-		else if (balloon.style.backgroundColor == "blue")
-			balloon.style.backgroundColor = "green";
-		else if (balloon.style.backgroundColor == "green")
-			balloon.style.backgroundColor = "red";
-	})
-</script>
