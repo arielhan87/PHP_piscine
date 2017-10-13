@@ -1,6 +1,6 @@
 var list_data = [];
 
-function update_cookie(data)
+function get_cookie(data)
 {
 	var date = new Date;
 	date.setHours(date.getHours() + 24);
@@ -8,19 +8,19 @@ function update_cookie(data)
 	document.cookie = "todo=" + JSON.stringify(data) + "; expires=" + date + "; path=/";
 }
 
-function remove_from_list()
+function rm_list()
 {
 	if (confirm("Are you sure you want to remove '" + this.innerHTML + "'?"))
 	{
 		var todo_content = this.innerHTML;
 		var i = list_data.indexOf(todo_content);
 		list_data.splice(i, 1);
-		update_cookie(list_data);
+		get_cookie(list_data);
 		this.parentNode.removeChild(this);
 	}
 }
 
-function add_to_list(str)
+function add_list(str)
 {
 	var list = document.getElementById("ft_list");
 	var new_elem = document.createElement("div");
@@ -28,7 +28,7 @@ function add_to_list(str)
 	new_elem.appendChild(new_content);
 	var current_first = list.firstChild;
 	list.insertBefore(new_elem, current_first);
-	new_elem.addEventListener("click", remove_from_list);
+	new_elem.addEventListener("click", rm_list);
 }
 
 function init_list()
@@ -40,12 +40,12 @@ function init_list()
 		{
 			list_data = JSON.parse(cookies[i].substr(5, undefined));
 			for (var j = 0; j < list_data.length; j++)
-				add_to_list(decodeURIComponent(list_data[j]));
+				add_list(decodeURIComponent(list_data[j]));
 		}
 	}
 }
 
-function init_button()
+function new_button()
 {
 	var button = document.getElementById("button");
 	button.addEventListener("click", function() {
@@ -53,11 +53,11 @@ function init_button()
 		if (todo_content)
 		{
 			list_data.push(encodeURIComponent(todo_content));
-			update_cookie(list_data);
-			add_to_list(todo_content);
+			get_cookie(list_data);
+			add_list(todo_content);
 		}
 	});
 }
 
 init_list();
-init_button();
+new_button();
